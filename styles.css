@@ -21,7 +21,7 @@ nav {
   gap: 1rem;
 }
 
-.right-menu {
+.right-menu { /* correctly named? */
   display: none;
   list-style: none;
   align-items: center;
