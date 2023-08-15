@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.container--menu-icon { /* correctly named? */
+  padding: 3rem;
+}
