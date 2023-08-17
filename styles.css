@@ -9,36 +9,61 @@ nav {
   padding: 1rem;
 }
 
-.nav-items {
+.header__in-site-nav__items {
   display: none;
   list-style: none;
   gap: 1rem;
 }
 
-.left-menu {
+@media (min-width: 768px) {
+  .header__in-site-nav__items {
+    display: flex;
+  }
+}
+
+.header__in-site-nav {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.right-menu { /* correctly named? */
+.header__auth-btns { /* correctly named? */
   display: none;
   list-style: none;
   align-items: center;
   gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header__auth-btns {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
   .menu-icon { /* correctly named? */
     display: none;
   }
-  .nav-items {
-    display: flex;
-  }
 }
 
-@media (min-width: 768px) {
-  .right-menu {
-    display: flex;
-  }
+.header__in-site__nav-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.header__sign-up-button { /* These button styles are almost the same, what would be the best approach for this? */
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 25px;
+}
+
+.header__sign-up-button:hover {
+  background-color: beige;
+  color: black;
 }
