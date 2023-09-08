@@ -1,0 +1,30 @@
+  @import '../variables.css';
+  
+  .btns-list {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: var(--medium-screen)) {
+    .btns-list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-btns[aria-hidden="false"] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: antiquewhite;
+  }
+}
+

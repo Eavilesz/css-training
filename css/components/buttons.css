@@ -1,0 +1,33 @@
+@import '../variables.css';
+
+#toggle-button { 
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  #toggle-button { 
+    display: none;
+  }
+}
+
+.header__in-site__nav-button {
+  font-size: var(--font-size-navbar);
+}
+
+.header__in-site__nav-button:hover {
+  text-decoration: underline;
+}
+
+.header__sign-up-button { 
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-navbar);
+}
+
+.header__sign-up-button:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+

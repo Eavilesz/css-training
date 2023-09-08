@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/components/navMenus.css">
+    <link rel="stylesheet" href="./css/components/buttons.css">
+    <link rel="stylesheet" href="./css/components/btnsList.css">
     <title>CSS training</title>
 </head>
 <body>
     <nav>
-      <div class="header__in-site-nav">
+      <div class="header__start__items">
         <button class="header__in-site__nav-button">
           <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <circle cx="26" cy="26" r="26" fill="url(#pattern0)"/>
@@ -20,23 +24,28 @@
                 </defs>
           </svg>  
         </button>
-        <ul class="header__in-site-nav__items">
+        <ul id="main-btns" class="btns-list header__in-site-nav__items">
             <li><button class="header__in-site__nav-button">About Us</button></li>
             <li><button class="header__in-site__nav-button">How it works</button></li>
             <li><button class="header__in-site__nav-button">Pricing</button></li>
             <li><button class="header__in-site__nav-button">FAQs</button></li>
           </ul>
       </div>
-        <ul class="header__auth-btns"> 
-          <li><button class="header__in-site__nav-button">Login</button></li>
-          <li><button class="header__sign-up-button">Sign up</button></li>
-        </ul>
-        <div class="menu-icon"> <!-- should this be part of the <ul> above? -->
+      <!-- <div id="header__nav-menus"> -->
+          <ul class="btns-list header__auth-btns"> 
+            <li><button class="header__in-site__nav-button">Login</button></li>
+            <li><button class="header__sign-up-button">Sign up</button></li>
+          </ul>
+      <!-- </div> -->
+        <button id="toggle-button" aria-expanded="false" aria-controls="btns-list header__auth-btns">  
           <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.01" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H52V52H0V0Z" fill="white"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M40 21H12V23H40V21ZM40 29H12V31H40V29Z" fill="#151515"/>
           </svg>
-      </div>
+      </button>
     </nav>
+    <section class="main-content"><h1>Content here</h1></section>
+
+    <script src="menu.js"></script>
 </body>
 </html>

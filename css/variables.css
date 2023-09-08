@@ -1,0 +1,12 @@
+:root {
+  /* Colors */
+  --primary-color: antiquewhite;
+  --secondary-color: chocolate;
+
+  /* Screen sizes */
+  --medium-screen: 768px;
+
+  /* Font sizes */
+  --font-size-navbar: 25px;
+  --font-size-heading: 35px;
+}

@@ -1,0 +1,10 @@
+.header__in-site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__start__items {
+  display: flex;
+  gap: 1rem;
+}
